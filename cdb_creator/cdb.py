@@ -3,7 +3,7 @@ from abc import ABCMeta, abstractmethod
 
 class cdb_creator(metaclass=ABCMeta):
     @abstractmethod
-    def generate_cdb(self, root_dir, result_dir):
+    def generate_cdb(self, result_dir):
         pass
 
     @abstractmethod
@@ -11,5 +11,5 @@ class cdb_creator(metaclass=ABCMeta):
         pass
 
     @abstractmethod
-    def add_exclude_define(self, define):
+    def add_exclude_define(self, exclude_define):
         pass
